@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "clayium:block/titanium_block"
+    }
+  }
+}
