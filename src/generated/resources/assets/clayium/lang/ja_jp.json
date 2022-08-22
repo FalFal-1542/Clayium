@@ -1,5 +1,7 @@
 {
+  "block.clayium.dense_clay": "\u9AD8\u5BC6\u5EA6\u7C98\u571F",
   "block.clayium.titanium_block": "\u30C1\u30BF\u30F3\u30D6\u30ED\u30C3\u30AF",
+  "item.clayium.clay_pickaxe": "\u7C98\u571F\u30C4\u30EB\u30CF\u30B7",
   "item.clayium.clay_plate": "\u7C98\u571F\u677F",
   "item.clayium.clay_shovel": "\u7C98\u571F\u30B7\u30E3\u30D9\u30EB",
   "item.clayium.clay_stick": "\u7C98\u571F\u68D2"

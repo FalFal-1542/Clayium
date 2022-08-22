@@ -3,28 +3,30 @@ package mods.clayium;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.tags.ItemTags;
+import net.minecraft.util.LazyValue;
+
+import java.util.function.Supplier;
 
 public enum ClayiumTier implements IItemTier {
 
-    CLAY(0, 400, 3.0F, 0.0F, 15,
-            Ingredient.fromItems(Items.CLAY,Items.CLAY_BALL)),
-    DENCE_CLAY(2,800,5.0F,2.0F,30,
-            Ingredient.fromItems(Clayium.Items.DENSE_CLAY.get())),
+    CLAY(1, 400, 1.5F, 0.0F, 15,
+            () -> Ingredient.fromItems(Items.CLAY,Items.CLAY_BALL)),
+    DENSE_CLAY(2,800,3.0F,1.0F,30,
+            () -> Ingredient.fromItems(Clayium.Items.DENSE_CLAY.get())),
 
     ;
 
     private final int MaxUses,Harvestlevel,Enchantability;
     private final float Efficiency,AttackDamage;
-    private final Ingredient RepairMaterial;
+    private final LazyValue<Ingredient> RepairMaterial;
 
-    private ClayiumTier(int harvestlevel,int maxUses,float efficiency, float attackDamage, int enchantability, Ingredient repairMaterial){
+    ClayiumTier(int harvestlevel,int maxUses,float efficiency, float attackDamage, int enchantability, Supplier<Ingredient> repairMaterial){
         this.Harvestlevel = harvestlevel;
         this.MaxUses = maxUses;
         this.Efficiency =  efficiency;
         this.AttackDamage = attackDamage;
         this.Enchantability = enchantability;
-        this.RepairMaterial = repairMaterial;
+        this.RepairMaterial = new LazyValue<>(repairMaterial);
     }
 
 
@@ -53,6 +55,6 @@ public enum ClayiumTier implements IItemTier {
 
     @Override
     public Ingredient getRepairMaterial() {
-        return this.RepairMaterial;
+        return this.RepairMaterial.getValue();
     }
 }

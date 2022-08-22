@@ -1,8 +1,12 @@
+3fc25ec83d9ebe38512ecb31e12c5a7c01d6dfb5 assets/clayium/blockstates/dense_clay.json
 e79c791932c3d477996e3d0e9441c654f13443ad assets/clayium/blockstates/titanium_block.json
-aa5588d3eaaeeabd990e51ace34295642c9fb922 assets/clayium/lang/en_us.json
-98bcb61270fa8750b0eedc8ebab01cfc2487ef73 assets/clayium/lang/ja_jp.json
+4299b58481b3eb6ef04b3a32292b0631992fb12f assets/clayium/lang/en_us.json
+d9731626c99588dc2626dd1fd4ae10f71fd10527 assets/clayium/lang/ja_jp.json
+91c5bdfc324cd5eb94f016596047c4f869d84801 assets/clayium/models/block/dense_clay.json
 a94c0a4442c7441f20e8a008fd1e3836e75b4b06 assets/clayium/models/block/titanium_block.json
+89950d7eef271f1985e229725fd8f2271e56e07e assets/clayium/models/item/clay_pickaxe.json
 e69a09d3c79ccf64b94faffcbaa9bac7576d170b assets/clayium/models/item/clay_plate.json
 c4fcebe01a71e00b068f4cd505b982a27d3f7243 assets/clayium/models/item/clay_shovel.json
 cc0fa9299fe174616a8746ffc61b2b680964c47c assets/clayium/models/item/clay_stick.json
+ae87e178987efaa76c7a6a4c7c481251791f3b4b assets/clayium/models/item/dense_clay.json
 8d30dba9ee35ae976f0481d1302ad3e392af3ff4 assets/clayium/models/item/titanium_block.json

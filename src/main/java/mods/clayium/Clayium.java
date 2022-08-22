@@ -1,6 +1,7 @@
 package mods.clayium;
 
 
+//import mods.clayium.item.ClayPickaxe;
 import mods.clayium.item.ClayPickaxe;
 import mods.clayium.item.ClayShovel;
 import mods.clayium.item.common.ClayiumMaterial;
@@ -42,19 +43,6 @@ public class Clayium {
             return new ItemStack(net.minecraft.item.Items.CLAY_BALL.getItem());
         }
     };
-    public class IR extends Item{
-        public IR(String modelPath) {
-            super(new Properties());
-            setRegistryName(modelPath);
-            setRegistryName(Clayium.MOD_ID, modelPath);
-            isInGroup(Clayium.CLAYIUM_TAB);
-        }
-        public IR(ClayiumMaterial material, ClayiumShape shape) {
-            this(material.getName() + "_" + shape.getName());
-        }
-    }
-
-
 
     //ItemRegisterみたいな感じに独立させたい
 

@@ -16,6 +16,9 @@ public class ClayiumEnUsLanguageProvider extends LanguageProvider {
         add(Clayium.Items.CLAY_STICK.get(), "Clay Stick");
         add(Clayium.Items.CLAY_PLATE.get(), "Clay Plate");
         add(Clayium.Items.CLAY_SHOVEL.get(), "Clay Shovel");
+        add(Clayium.Items.CLAY_PICKAXE.get(), "Clay Pickaxe");
+
+        add(Clayium.Items.DENSE_CLAY.get(),"Dense Clay");
         add(Clayium.Items.TITANIUM_BLOCK.get(), "Block of Titanium");
     }
 }

@@ -21,7 +21,7 @@ public class ClayiumItemModelProvider extends ItemModelProvider {
         simpleItem(Clayium.Items.CLAY_STICK.get());
         simpleItem(Clayium.Items.CLAY_PLATE.get());
         simpleItem(Clayium.Items.CLAY_SHOVEL.get());
-
+        simpleItem(Clayium.Items.CLAY_PICKAXE.get());
     }
 
     private void simpleItem(Item item) {

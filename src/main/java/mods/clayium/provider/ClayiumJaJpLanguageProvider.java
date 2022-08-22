@@ -14,6 +14,9 @@ public class ClayiumJaJpLanguageProvider extends LanguageProvider {
         add(Clayium.Items.CLAY_STICK.get(), "粘土棒");
         add(Clayium.Items.CLAY_PLATE.get(), "粘土板");
         add(Clayium.Items.CLAY_SHOVEL.get(),"粘土シャベル");
+        add(Clayium.Items.CLAY_PICKAXE.get(),"粘土ツルハシ");
+
+        add(Clayium.Items.DENSE_CLAY.get(),"高密度粘土");
         add(Clayium.Items.TITANIUM_BLOCK.get(), "チタンブロック");
     }
 }

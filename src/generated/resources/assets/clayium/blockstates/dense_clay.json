@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "clayium:block/dense_clay"
+    }
+  }
+}
