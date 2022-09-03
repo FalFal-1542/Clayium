@@ -11,7 +11,7 @@ public enum ClayiumTier implements IItemTier {
 
     CLAY(1, 400, 1.5F, 0.0F, 15,
             () -> Ingredient.fromItems(Items.CLAY,Items.CLAY_BALL)),
-    DENSE_CLAY(2,800,3.0F,1.0F,30,
+    DENSE_CLAY(2,600,3.0F,1.0F,30,
             () -> Ingredient.fromItems(Clayium.Items.DENSE_CLAY.get())),
 
     ;

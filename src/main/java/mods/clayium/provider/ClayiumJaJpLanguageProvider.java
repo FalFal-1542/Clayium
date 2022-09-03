@@ -1,9 +1,10 @@
 package mods.clayium.provider;
 
-import mods.clayium.Clayium;
+
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.LanguageProvider;
 
+import static mods.clayium.Clayium.Items.*;
 public class ClayiumJaJpLanguageProvider extends LanguageProvider {
     public ClayiumJaJpLanguageProvider(DataGenerator gen, String modId) {
         super(gen, modId, "ja_jp");
@@ -11,12 +12,13 @@ public class ClayiumJaJpLanguageProvider extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
-        add(Clayium.Items.CLAY_STICK.get(), "粘土棒");
-        add(Clayium.Items.CLAY_PLATE.get(), "粘土板");
-        add(Clayium.Items.CLAY_SHOVEL.get(),"粘土シャベル");
-        add(Clayium.Items.CLAY_PICKAXE.get(),"粘土ツルハシ");
+        add(CLAY_SHOVEL.get(),"粘土シャベル");
+        add(CLAY_PICKAXE.get(),"粘土ツルハシ");
 
-        add(Clayium.Items.DENSE_CLAY.get(),"高密度粘土");
-        add(Clayium.Items.TITANIUM_BLOCK.get(), "チタンブロック");
+
+
+
+        add(DENSE_CLAY.get(),"高密度粘土");
+        add(TITANIUM_BLOCK.get(), "チタンブロック");
     }
 }

@@ -11,7 +11,7 @@ import java.util.Set;
 public class ClayShovel extends ShovelItem {
 
     public ClayShovel() {
-        super(ClayiumTier.CLAY, 1, -3.0F, new Properties().group(Clayium.CLAYIUM_TAB).rarity(Rarity.UNCOMMON));
+        super(ClayiumTier.CLAY, 1, -3.0F, new Properties().group(Clayium.CLAYIUM_TAB).rarity(Rarity.COMMON));
     }
 /*
     @Override

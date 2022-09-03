@@ -5,13 +5,11 @@ import java.util.List;
 import java.util.function.Consumer;
 
 public enum ClayiumMaterial {
-    clay("clay", "Clay", 0,0,0),
 
-    // Period II
-    lithium("lithium", "Lithium", 16777215,0,1),
-    ;
-
-    ClayiumMaterial(String name, String ODName, int Hex,int Tier,int layer) {
+    clay("clay", "Clay", 0,1,0),
+    denseclay("denseclay","DenseClay",0,2,0),
+;
+    ClayiumMaterial(String name, String ODName, int Hex, int Tier, int layer) {
         this(name, ODName,Hex,Tier,0,1.0F);
     }
 
@@ -60,10 +58,10 @@ public enum ClayiumMaterial {
     private final int Tier;
     private final int layer;
 
-    public static final List<ClayiumMaterial> Plate = Arrays.asList(
+    public static final List<ClayiumMaterial> Tier1 = Arrays.asList(
         clay
     );
     public static final List<ClayiumMaterial> Ingots = Arrays.asList(
-            lithium
+
     );
 }

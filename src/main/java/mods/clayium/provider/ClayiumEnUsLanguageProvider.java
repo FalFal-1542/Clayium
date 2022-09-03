@@ -1,8 +1,13 @@
 package mods.clayium.provider;
 
-import mods.clayium.Clayium;
+
+import mods.clayium.EnumUtil;
+import mods.clayium.item.common.ClayiumMaterial;
+import mods.clayium.item.common.ClayiumShape;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.LanguageProvider;
+
+import static mods.clayium.Clayium.Items.*;
 
 public class ClayiumEnUsLanguageProvider extends LanguageProvider {
     public ClayiumEnUsLanguageProvider(DataGenerator gen, String modId) {
@@ -11,14 +16,20 @@ public class ClayiumEnUsLanguageProvider extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
-        add(Clayium.CLAYIUM_TAB.getPath(), "Clayium");
+        add("itemGroup.clayium", "Clayium"); //CreativeTab
 
-        add(Clayium.Items.CLAY_STICK.get(), "Clay Stick");
-        add(Clayium.Items.CLAY_PLATE.get(), "Clay Plate");
-        add(Clayium.Items.CLAY_SHOVEL.get(), "Clay Shovel");
-        add(Clayium.Items.CLAY_PICKAXE.get(), "Clay Pickaxe");
+        add(CLAY_SHOVEL.get(), "Clay Shovel");
+        add(CLAY_PICKAXE.get(), "Clay Pickaxe");
 
-        add(Clayium.Items.DENSE_CLAY.get(),"Dense Clay");
-        add(Clayium.Items.TITANIUM_BLOCK.get(), "Block of Titanium");
+        for(ClayiumShape resource: EnumUtil.RESOURCE_TYPES ){
+            for(ClayiumMaterial Material : EnumUtil.PRIMARY_RESOURCES){
+                add("item.clayium."+ Material.getName() + "_" +resource.getName(), Material.getODName() + " " + resource.getUSName());
+            }
+        }
+        add(DENSE_CLAY.get(),"Dense Clay");
+        add(TITANIUM_BLOCK.get(), "Block of Titanium");
+
+
+
     }
 }
